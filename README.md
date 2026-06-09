@@ -25,7 +25,7 @@ This repository contains the Python code used to derive cost-optimal benchmarks,
 
 ## Scripts
 
-### 1. `Decline_rate_benchmarks_4.py`
+### 1. `decline_rate_benchmarks.py`
 **Purpose:** Derives cost-optimal benchmarks for UK oil and gas by fitting an exponential decline rate to TIAM-UCL model output (Welsby et al. 2021) and extrapolating forward from recent observed production.
 
 **Method:**
@@ -46,7 +46,7 @@ This repository contains the Python code used to derive cost-optimal benchmarks,
 
 ---
 
-### 2. `Climate-tests-test-subject-emissions-30.py`
+### 2. `test-subject-emissions.py`
 **Purpose:** Processes NSTA reserves and resources data to compute cumulative stacked test subject emissions for all ordering scenarios and production scenarios. Produces Figure 2a (stacked bar charts of UK oil and gas potential production).
 
 **Method:**
@@ -71,7 +71,7 @@ This repository contains the Python code used to derive cost-optimal benchmarks,
 
 ---
 
-### 3. `climate_tests_and_heat_maps_12.py`
+### 3. `climate_tests_and_heat_maps.py`
 **Purpose:** Calculates climate compatibility ratios (γ = test subject / benchmark) for all combinations of ordering scenario, production scenario, benchmark, and temperature target. Produces Figure 3 heatmap tables and exports all results to Excel.
 
 **Method:**
@@ -95,7 +95,7 @@ This repository contains the Python code used to derive cost-optimal benchmarks,
 
 ---
 
-### 4. `benchmark-plot-5.py`
+### 4. `benchmark-plot.py`
 **Purpose:** Produces Figure 2b — the grouped bar chart showing downstream benchmark emissions for UK oil and gas under each allocation approach and temperature target.
 
 **Method:**
@@ -152,16 +152,16 @@ Run scripts in the following order:
 
 ```bash
 # Step 1: Derive cost-optimal benchmarks
-python Decline_rate_benchmarks_4.py
+python decline_rate_benchmarks.py
 
 # Step 2: Compute test subject emissions and generate Fig. 2a
-python Climate-tests-test-subject-emissions-30.py
+python test-subject-emissions.py
 
 # Step 3: Calculate γ ratios and generate Fig. 3 heatmaps
-python climate_tests_and_heat_maps_12.py
+python climate_tests_and_heat_maps.py
 
 # Step 4: Generate Fig. 2b benchmark bar chart
-python benchmark-plot-5.py
+python benchmark-plot.py
 ```
 
 **Before running**, update the file paths at the top of each script to point to your local data directory. All scripts use a `loc` variable for the base directory.
@@ -180,7 +180,7 @@ Script 2 generates multiple ordering scenarios reflecting alternative classifica
 
 If you use this code, please cite:
 
-Horen Greenford, D., Lesk, C., Barnes, A., Wakefield, J.R., Lloyd, S. & Matthews, H.D. (2026). Climate testing fossil fuel extraction: A framework applied to UK oil and gas. *Nature Climate Change*. [DOI: PLACEHOLDER]
+Horen Greenford, D., Lesk, C., Barnes, A., Wakefield, J.R., Lloyd, S. & Matthews, H.D. (2026). Climate testing fossil fuel extraction: A framework applied to UK oil and gas. *in rev.*. [DOI: PLACEHOLDER]
 
 ---
 

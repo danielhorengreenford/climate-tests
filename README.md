@@ -67,7 +67,7 @@ This repository contains the Python code used to derive cost-optimal benchmarks,
 **Key outputs:**
 - `outputs/oil_[central|eia|upper]_test_subjects.csv` — Cumulative oil emissions by ordering scenario and production scenario
 - `outputs/gas_[central|eia|upper]_test_subjects.csv` — Same for gas
-- `outputs/[scenario_name]_oil_gas-share_y-3.svg` — Stacked bar panel plots (Fig. 2a) for each ordering scenario
+- `outputs/[scenario_name]_oil_gas-share_y.svg` — Stacked bar panel plots (Fig. 2a) for each ordering scenario
 
 ---
 

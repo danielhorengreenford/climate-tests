@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
+Test subject emissions
+
 Created on Fri Feb 20 15:41:01 2026
 
 @author: danielhorengreenford
@@ -571,7 +573,7 @@ print("EXTRACTION COMPLETE")
 print("="*80)
 
 # ============================================================================
-# CREATE PLOTS WITH (IN)DEPENDENT Y-AXES - NATURE STYLE, GtCO2
+# CREATE PLOTS WITH SHARED Y-AXES - NATURE STYLE, GtCO2
 # ============================================================================
 
 import matplotlib.pyplot as plt
@@ -589,7 +591,7 @@ plt.rcParams['ytick.major.width'] = 0.8
 
 def create_oil_gas_panel_plot(oil_dict, gas_dict, scenario_name, figsize=(12, 6)):
     """
-    Create 1x2 panel plot with INDEPENDENT y-axes in GtCO2
+    Create 1x2 panel plot with shared y-axes in GtCO2
     """
     
     fig, axes = plt.subplots(1, 2, figsize=figsize, sharey=True) #Toggle sharey=False/True to share y-axis
@@ -829,7 +831,7 @@ scenario_names = sorted(oil_test_subjects['central'].keys())
 
 for scenario_name in scenario_names:
     fig = create_oil_gas_panel_plot(oil_test_subjects, gas_test_subjects, scenario_name)
-    base_filename = f"{output_dir}{scenario_name}_oil_gas-share_y-3"
+    base_filename = f"{output_dir}{scenario_name}_oil_gas-share_y"
     
     # plt.savefig(f"{base_filename}.png", dpi=300, bbox_inches='tight')
     plt.savefig(f"{base_filename}.svg", format='svg', bbox_inches='tight')

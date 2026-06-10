@@ -1,0 +1,9 @@
+﻿Benchmarks,Target,Oil,Gas
+Cost-optimal,1.7ºC (83%),1.34,0.58
+Cost-optimal,1.5ºC (50%),0.61,0.26
+Current trends,1.7ºC (67%),1.45,0.63
+Current trends,1.5ºC (50%),0.35,0.15
+Equity via partial reallocation,1.7ºC (67%),1.01,0.44
+Equity via partial reallocation,1.5ºC (50%),0.24,0.11
+Equity via full reallocation,1.7ºC (67%),0.76,0.33
+Equity via full reallocation,1.5ºC (50%),0.18,0.08

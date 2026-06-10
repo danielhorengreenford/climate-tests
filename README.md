@@ -107,7 +107,7 @@ This repository contains the Python code used to derive cost-optimal benchmarks,
 - `benchmarks-GtCO2-2025_2100.csv` — Benchmark allowances in GtCO₂ (same data as MtCO₂ file, rescaled)
 
 **Key outputs:**
-- `benchmark_nature-4.pdf` / `benchmark_nature-4.svg` — Figure 2b
+- `benchmark_nature.pdf` / `benchmark_nature.svg` — Figure 2b
 
 ---
 
@@ -148,20 +148,22 @@ pip install pandas numpy scipy matplotlib openpyxl
 
 ## Reproducing the Analysis
 
-Run scripts in the following order:
+Scripts were run using Spyder 6.1.3 in an Anaconda Python environment
+
+Run scripts in the following order, if using python in command line:
 
 ```bash
-# Step 1: Derive cost-optimal benchmarks
-python decline_rate_benchmarks.py
-
-# Step 2: Compute test subject emissions and generate Fig. 2a
+# Step 1: Compute test subject emissions and generate Fig. 2a
 python test-subject-emissions.py
 
-# Step 3: Calculate γ ratios and generate Fig. 3 heatmaps
-python climate_tests_and_heat_maps.py
+# Step 2: Derive cost-optimal benchmarks
+python decline_rate_benchmarks.py
 
-# Step 4: Generate Fig. 2b benchmark bar chart
+# Step 3: Generate Fig. 2b benchmark bar chart
 python benchmark-plot.py
+
+# Step 4: Calculate γ ratios and generate Fig. 3 heatmaps
+python climate_tests_and_heat_maps.py
 ```
 
 **Before running**, update the file paths at the top of each script to point to your local data directory. All scripts use a `loc` variable for the base directory.
@@ -180,7 +182,7 @@ Script 2 generates multiple ordering scenarios reflecting alternative classifica
 
 If you use this code, please cite:
 
-Horen Greenford, D., Lesk, C., Barnes, A., Wakefield, J.R., Lloyd, S. & Matthews, H.D. (2026). Climate testing fossil fuel extraction: A framework applied to UK oil and gas. *in rev.*. [DOI: PLACEHOLDER]
+Horen Greenford, D., Lesk, C., Barnes, A., Wakefield, J.R., Lloyd, S. & Matthews, H.D. (2026). Climate testing fossil fuel extraction: A framework applied to UK oil and gas. *in rev.*. https://dx.doi.org/10.21203/rs.3.rs-9546305/v1
 
 ---
 

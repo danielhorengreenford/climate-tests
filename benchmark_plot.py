@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Benchmark plot 
-Created on Wed Feb 25 20:36:35 2026
+Benchmark plot
 
+Created on Wed Feb 25 20:36:35 2026
 @author: danielhorengreenford
 """
 
@@ -36,14 +36,9 @@ plt.rcParams['axes.linewidth'] = 0.8
 plt.rcParams['xtick.major.width'] = 0.8
 plt.rcParams['ytick.major.width'] = 0.8
 
-# Read the CSV file
-# csv_path = "/path/to/your/file.csv"  # UPDATE THIS PATH
-# df = pd.read_csv(csv_path)
-
 # Create figure
 print("Creating figure...")
 fig, ax = plt.subplots(figsize=(10, 6))
-# fig, ax = plt.subplots(figsize=(7, 4))
 
 # Define colors matching the benchmarks
 color_map = {
@@ -124,12 +119,12 @@ legend_elements = [
 
 # Add legend in top right corner
 ax.legend(handles=legend_elements, loc='upper right', frameon=True, 
-          title='Benchmarks', title_fontsize=11) #          fontsize=9
+          title='Benchmarks', title_fontsize=11) #fontsize=9
 
 # Save at high resolution for publication
-# plt.savefig(output_dir + 'benchmark_nature-4.png', dpi=300, bbox_inches='tight')
-plt.savefig(output_dir + 'benchmark_nature-4.pdf', format='pdf', bbox_inches='tight')
-plt.savefig(output_dir + 'benchmark_nature-4.svg', format='svg', bbox_inches='tight')
+# plt.savefig(output_dir + 'benchmark_nature.png', dpi=300, bbox_inches='tight')
+plt.savefig(output_dir + 'benchmark_nature.pdf', format='pdf', bbox_inches='tight')
+plt.savefig(output_dir + 'benchmark_nature.svg', format='svg', bbox_inches='tight')
 print("About to show...")
 plt.show()
 print("Plot shown!")

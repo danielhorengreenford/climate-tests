@@ -4,7 +4,6 @@
 Climate tests and heatmap table
 
 Created on Thu Feb 26 13:19:25 2026
-
 @author: danielhorengreenford
 """
 import pandas as pd
@@ -51,6 +50,7 @@ print(benchmark_df)
 # UPDATE THIS PATH to your data directory
 data_dir = loc+"outputs/"  # or specify a different path
 output_dir = data_dir
+
 # Load the 6 test subject CSV files that were saved earlier
 oil_central_df = pd.read_csv(data_dir + 'oil_central_test_subjects.csv', index_col=0)
 oil_eia_df = pd.read_csv(data_dir + 'oil_eia_test_subjects.csv', index_col=0)

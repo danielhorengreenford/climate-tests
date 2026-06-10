@@ -1,6 +1,6 @@
 # Climate Testing Fossil Fuel Extraction: Code Repository
 
-**Supporting code for:** Horen Greenford, D., Lesk, C., Barnes, A., Wakefield, J.R., Lloyd, S. & Matthews, H.D. "Robust climate tests for fossil fuel supply under the Paris Agreement" *Nature Communications* (*under review*).
+**Supporting code for:** Horen Greenford, D., Lesk, C., Barnes, A., Wakefield, J.R., Lloyd, S. & Matthews, H.D. "Robust climate tests for fossil fuel supply under the Paris Agreement" *Nature Communications* (*under review*). Preprint available at https://dx.doi.org/10.21203/rs.3.rs-9546305/v1
 
 ---
 

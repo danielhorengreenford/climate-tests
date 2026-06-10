@@ -13,10 +13,10 @@ This repository contains the Python code used to derive cost-optimal benchmarks,
 ## Repository Structure
 
 ```
-├── decline_rate_benchmarks.py          # Cost-optimal benchmark derivation
-├── test-subject-emissions.py  # Test subject emissions & Fig. 2a
-├── climate_tests_and_heat_maps.py     # γ calculations & Fig. 3 heatmaps
-├── benchmark-plot.py                   # Benchmark bar chart (Fig. 2b)
+├── decline_rate_benchmarks.py            # Cost-optimal benchmark derivation
+├── test-subject-emissions.py             # Test subject emissions & Fig. 2a
+├── climate_tests_and_heat_maps.py        # γ calculations & Fig. 3 heatmaps
+├── benchmark-plot.py                     # Benchmark bar chart (Fig. 2b)
 ├── data/                                 # Input data (see Data Requirements below)
 └── outputs/                              # Generated figures and data tables
 ```

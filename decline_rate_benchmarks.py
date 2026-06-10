@@ -124,7 +124,7 @@ result_ols, fit_ols = extrapolate_from_fit(real_data, projection_years, method='
 print(f"NLS decline rate: {fit_nls['decline_rate']:.2%},  RMSE: {fit_nls['rmse']:.2f}")
 print(f"OLS decline rate: {fit_ols['decline_rate']:.2%},  R²:   {fit_ols['r_squared']:.4f}")
 
-# Using Welsby et al. (We can try Pye et al. later, and don't forget to include NZE for Europe too; Ref: Welsby et al (2021), UCL report)
+# Using Welsby et al. data (Shared via correspondence)
 
 loc = "/Users/danielhorengreenford/Documents/Research/Paper 2 - climate tests/"
 
@@ -248,31 +248,6 @@ def extrapolate_with_modelled_rate(real_data, projection_years, n_tail_years=5,
     }
 
     return result, diagnostics
-
-"""
-# Use case
-
-real_data = pd.Series(
-    [1050, 1020, 980, 960, 940, 910, 880],
-    index=range(2016, 2023)
-)
-
-modelled_data = pd.Series(
-    [1200, 1100, 1000, 900, 800, 700, 600, 500],
-    index=range(2015, 2023)
-)
-
-projection_years = range(2023, 2041)
-
-result, diag = extrapolate_with_modelled_rate(
-    real_data, modelled_data, projection_years, n_tail_years=5
-)
-
-print(f"Decline rate (from model): {diag['decline_rate']:.2%}")
-print(f"Calibrated v0:             {diag['v0']:.1f}  (anchored to {diag['base_year']})")
-print(f"Tail RMSE:                 {diag['tail_rmse']:.2f}")
-print(result)
-"""
 
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
@@ -533,7 +508,7 @@ with pd.ExcelWriter(loc+'oil_gas_projections-2050.xlsx', engine='openpyxl') as w
     production_df_with_total.to_excel(writer, sheet_name='Production')
     emissions_df_with_total.to_excel(writer, sheet_name='Emissions')
     
-# Now run for the IEA Europe decline rates: IEA NZE (European level), 2020-2050 from Welsby et al. UCL: https://www.ucl.ac.uk/bartlett/sites/bartlett/files/uk_oil_and_gas_in_a_1.5_degree_world_final_0.pdf
+# Now run for the IEA Europe decline rates: IEA NZE (European level), from Welsby et al. UCL: https://www.ucl.ac.uk/bartlett/sites/bartlett/files/uk_oil_and_gas_in_a_1.5_degree_world_final_0.pdf
 
 decline_rates = {
     'oil': 0.08,  # 8% per year

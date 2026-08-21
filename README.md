@@ -36,7 +36,7 @@ This repository contains the Python code used to derive cost-optimal benchmarks,
 - Runs IEA Net Zero Emissions European-level decline rates (8%/year oil and gas) as a sensitivity check, following Welsby et al. (2022) UCL report.
 
 **Key inputs:**
-- `Decline-rates.xlsx` — Welsby et al. TIAM-UCL UK production output (sheet: `Welsby`), in PJ, interpolated to annual timesteps
+- `Decline-rates.xlsx` — Welsby et al. TIAM-UCL UK production output (sheet: `Welsby`), in PJ, interpolated to annual timesteps. Note that this input data is only available upon request from study authors. Since the model run is now out of date, we use the decline rate to extrapolate current extraction trends. Users can run the code with the calculated decline rate. The decline rate result of the fit is stated in the code. Simply hard code the rate into the decline rate variable and run code from there onwards.
 - `Oil and gas production DUKES 2025.xlsx` — Real UK oil and gas production data (sheet: `Production_PJ`), in PJ
 
 **Key outputs:**
